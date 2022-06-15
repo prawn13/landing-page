@@ -9,6 +9,7 @@ body {
     justify-content: space-between;
 }
 
+/* HEADER & FOOTER */
 .header {
     justify-content: space-between;
     align-items: center;
@@ -17,9 +18,17 @@ body {
     font-size: 24px;
 }
 
+.footer {
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
 .header, .hero, .body1, .body2, .body3  {
     display: flex;
-    padding: 16px 240px;
+    padding: 16px 300px;
 }
 
 ul  {
@@ -43,9 +52,13 @@ ul  {
 .footer   {
     background-color: #1F2937;
 }
+img {max-width:100%;}
 
+/* HERO */
 .hero   {
     justify-content: space-between;
+    flex: auto;
+    gap: 10px;
 }
 
 .hero-text   {
@@ -57,7 +70,6 @@ ul  {
 
 .hero-image {
     height: 300px;
-    padding: 30px;
 }
 
 .hero-main  {
@@ -75,12 +87,50 @@ ul  {
 }
 
 a   {
-    text-decoration: none;
+    text-decoration:line-through;
     color: #E5E7EB;;
 }
 
 
+/* BODY1 */
+.body1  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
 
+.body1-header   {
+    font-size: 30px;
+    color:#254673;
+    font-style: oblique;
+}
+
+.body1-container    {
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.milk-bottle    {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.milk   {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.tidbit {
+    text-align: center;
+    font-size: 16px;
+    color:rgba(57, 16, 94, 0.918);
+}
+
+
+/* BODY2 */
 .body2   {
     background-color: #E5E7EB;
     flex-direction: column;
@@ -91,25 +141,43 @@ a   {
 
 .quote  {
     font-size: 48px;
-    color: #3969088e
+    color: #3969088e;
+    text-align: right;
 }
 
 .quote-attribution  {
     font-size: 24px;
-    color: #3969088e;
+    color: #2a5500;
+    font-weight: 900;
 }
 
 
-
-
-
-
-
-
-.footer {
-    color: #E5E7EB;
+/* BODY3 */
+.body3  {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
+
+.b3-box {
+    flex: auto;
+    text-align: center;
+    padding: 60px 30px;
+    margin: 0 200px;
+    border-radius: 12px;
+    background-color: #3882f6;
+    color:#F9FAF8;
+    font-size: 38px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cook-button    {
+    background-color: #88b6ff;
+    font-size: 14px;
+    color: rgba(181, 46, 46, 0.688);
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+
+
+
