@@ -113,14 +113,17 @@ a   {
 }
 
 .milk-bottle    {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 .milk   {
     flex-shrink: 0;
     width: 200px;
     height: 200px;
+    border-radius: 29px;
+    border-width:thick;
+    border-color:#254673;
 }
 
 .tidbit {
